@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-security-1
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productdb
+    username: postgres
+    password: 123456789
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: mySecretKey12345mySecretKey12345mySecretKey12345mySecretKey12345mySecretKey12345mySecretKey12345mySecretKey12345
+  expiration: 5
+
+server:
+  port: 9999
